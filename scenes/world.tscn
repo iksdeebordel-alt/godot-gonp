@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://coar0w52ewb50"]
 
 [ext_resource type="PackedScene" uid="uid://dyfxtt82qj0a8" path="res://entities/paddle/paddle.tscn" id="1_nnsk1"]
+[ext_resource type="PackedScene" uid="uid://b7gns5cly0e6p" path="res://entities/ball/ball.tscn" id="2_rwgxs"]
 
 [node name="World" type="Node2D" unique_id=1802043680]
 
@@ -13,8 +14,11 @@ color = Color(0, 0, 0, 1)
 position = Vector2(640, 360)
 
 [node name="Paddle" parent="." unique_id=693851735 instance=ExtResource("1_nnsk1")]
-position = Vector2(136, 0)
+position = Vector2(136, 352)
 
 [node name="Paddle2" parent="." unique_id=1458478025 instance=ExtResource("1_nnsk1")]
-position = Vector2(1144, 8)
+position = Vector2(1104, 352)
 is_player_one = false
+
+[node name="Ball" parent="." unique_id=947682269 instance=ExtResource("2_rwgxs")]
+position = Vector2(176, 312)

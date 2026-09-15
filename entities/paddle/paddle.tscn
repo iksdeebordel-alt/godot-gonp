@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://dyfxtt82qj0a8"]
 
 [ext_resource type="Script" uid="uid://nf3c10t8etdc" path="res://entities/paddle/paddle.gd" id="1_d472v"]
+[ext_resource type="PackedScene" uid="uid://bqq311nrcnyvl" path="res://entities/hitbox/hitbox.tscn" id="2_frr1j"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_igoac"]
 size = Vector2(16, 112)
@@ -13,3 +14,5 @@ polygon = PackedVector2Array(-8, -56, 8, -56, 8, 56, -8, 56)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1335990368]
 shape = SubResource("RectangleShape2D_igoac")
+
+[node name="Hitbox" parent="." unique_id=1020527409 groups=["paddle"] instance=ExtResource("2_frr1j")]

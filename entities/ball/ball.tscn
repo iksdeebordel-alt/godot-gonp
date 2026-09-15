@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://b7gns5cly0e6p"]
+
+[ext_resource type="Script" uid="uid://cjtqjp2uv661v" path="res://entities/ball/ball.gd" id="1_61umk"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vm8ic"]
+size = Vector2(16, 16)
+
+[node name="Ball" type="Area2D" unique_id=947682269]
+script = ExtResource("1_61umk")
+
+[node name="Polygon2D" type="Polygon2D" parent="." unique_id=165187344]
+position = Vector2(0, -32)
+scale = Vector2(1, 2)
+polygon = PackedVector2Array(32, 32, 48, 32, 48, 40, 32, 40)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=2106415418]
+position = Vector2(40, 40)
+shape = SubResource("RectangleShape2D_vm8ic")
