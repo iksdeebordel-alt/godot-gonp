@@ -19,4 +19,6 @@ func _physics_process(delta):
 func _on_paddle_hit(area: Area2D):
 	if area.is_in_group("paddle"):
 		print("Hit!");
-		velocity.x *= -1
+		var hit_paddle = area.get_parent() as Paddle
+		if hit_paddle == null:
+				return
