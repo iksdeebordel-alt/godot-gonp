@@ -15,10 +15,13 @@ position = Vector2(640, 360)
 
 [node name="Paddle" parent="." unique_id=693851735 instance=ExtResource("1_nnsk1")]
 position = Vector2(136, 352)
+is_player_one = null
+max_speed = null
 
 [node name="Paddle2" parent="." unique_id=1458478025 instance=ExtResource("1_nnsk1")]
 position = Vector2(1104, 352)
 is_player_one = false
+max_speed = null
 
 [node name="Ball" parent="." unique_id=947682269 instance=ExtResource("2_rwgxs")]
 position = Vector2(176, 312)
